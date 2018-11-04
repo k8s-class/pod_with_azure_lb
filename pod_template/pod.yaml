@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: basicwebapp.ghettolabs.io
+  labels:
+    app: basicwebapp 
+spec:
+  containers:
+  - name: basicwebapp 
+    image: buildmystartup/basicwebapp
+    ports:
+    - name: http-port
+      containerPort: 80 
